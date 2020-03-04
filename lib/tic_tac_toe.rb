@@ -80,7 +80,7 @@ class TicTacToe
   end
 
   def winner
-    
-    return nil
+
+    return nil if !self.won?
   end
 end
