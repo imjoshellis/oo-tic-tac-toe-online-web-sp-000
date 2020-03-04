@@ -39,6 +39,6 @@ class TicTacToe
   end
 
   def turn_count
-    @board.count(/[XO]/)
+    @board.count(/\w/)
   end
 end
