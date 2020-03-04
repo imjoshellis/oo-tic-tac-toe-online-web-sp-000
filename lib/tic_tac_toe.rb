@@ -35,6 +35,6 @@ class TicTacToe
   end
 
   def valid_move?(index)
-    !self.position_taken?(index)
+    !self.position_taken?(index) && index.match(/[0-8]/)
   end
 end
