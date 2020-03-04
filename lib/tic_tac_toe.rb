@@ -58,5 +58,6 @@ class TicTacToe
       end
     end
     display_board
+    return input
   end
 end
