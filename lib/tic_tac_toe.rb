@@ -52,7 +52,7 @@ class TicTacToe
       idx = input_to_index(input)
       if valid_move?(idx)
         move(idx, current_player)
-        break
+        return
       else
         "invalid"
       end
