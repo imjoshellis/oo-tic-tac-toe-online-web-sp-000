@@ -1,3 +1,5 @@
+require 'pry'
+
 class TicTacToe
   def initialize
     @board = Array.new(9, " ")
@@ -83,6 +85,7 @@ class TicTacToe
     if over? && won?
       return current_player == "X" ? "O" : "X"
     else
+binding.pry
       return nil
     end
   end
