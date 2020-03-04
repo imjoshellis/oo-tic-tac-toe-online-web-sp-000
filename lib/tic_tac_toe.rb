@@ -29,4 +29,10 @@ class TicTacToe
   def move(input, token)
     @board[input_to_index(input)] = token
   end
+
+  def position_taken?(index)
+    !@board[index].empty?
+  end
+
+  
 end
