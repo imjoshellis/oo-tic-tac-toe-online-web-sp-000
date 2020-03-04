@@ -47,6 +47,7 @@ class TicTacToe
   end
 
   def turn
+    input = ""
     loop do
       input = gets
       idx = input_to_index(input)
