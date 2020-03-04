@@ -80,6 +80,6 @@ class TicTacToe
   end
 
   def winner
-    self.won? ? current_player : nil
+    self.won? ? self.current_player : nil
   end
 end
