@@ -85,7 +85,6 @@ class TicTacToe
     if over? && won?
       return current_player == "X" ? "O" : "X"
     else
-      binding.pry
       return nil
     end
   end
