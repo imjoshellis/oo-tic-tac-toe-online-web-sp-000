@@ -80,6 +80,9 @@ class TicTacToe
   end
 
   def winner
-    return self.won? ? ( self.current_player == "X" ? "O" : "X" ) : nil
+    if self.won? do
+      return self.current_player == "X" ? "O" : "X"
+    end
+    return nil
   end
 end
