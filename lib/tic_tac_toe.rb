@@ -39,6 +39,6 @@ class TicTacToe
   end
 
   def turn_count
-    @board.each.scan('X'||'O')
+    @board.scan('X'||'O')
   end
 end
