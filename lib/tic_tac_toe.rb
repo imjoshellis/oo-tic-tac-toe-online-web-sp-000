@@ -80,7 +80,6 @@ class TicTacToe
   end
 
   def winner
-    return nil if !won?
     if over? && won?
       return current_player == "X" ? "O" : "X"
     end
