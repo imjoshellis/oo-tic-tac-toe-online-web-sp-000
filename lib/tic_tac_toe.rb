@@ -47,8 +47,14 @@ class TicTacToe
   end
 
   def turn
-    idx = input_to_index(gets)
-    move(idx, current_player) if valid_move?(idx)
+    loop do idx = input_to_index(gets)
+      if valid_move?(idx)
+        move(idx, current_player)
+        break
+      else
+        "invalid"
+      end
+    end
     display_board
   end
 end
