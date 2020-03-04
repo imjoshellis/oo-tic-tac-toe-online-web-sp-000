@@ -70,4 +70,16 @@ class TicTacToe
   def full?
     @board.count{|t| t == "X" || t == "O"} == 9
   end
+
+  def draw?
+    self.full? && !self.won?
+  end
+
+  def over?
+    self.draw? || self.won?
+  end
+
+  def winner
+    self.won? ? current_player : nil
+  end
 end
