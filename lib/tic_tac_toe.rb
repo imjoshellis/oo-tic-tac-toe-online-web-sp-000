@@ -47,7 +47,6 @@ class TicTacToe
   end
 
   def turn
-    input = ""
     loop do
       input = gets
       idx = input_to_index(input)
@@ -59,6 +58,16 @@ class TicTacToe
       end
     end
     display_board
-    return input
+  end
+
+  def won?
+    WIN_COMBINATIONS.each do |combo|
+      return combo if @board[combo[0]] == @board[combo[1]] && @board[combo[0]] == @board[combo[2]]
+    end
+    return false
+  end
+
+  def full?
+    @board.count{|t| t == "X" || t == "O"} == 9
   end
 end
